@@ -1,4 +1,4 @@
-<img width="1143" height="568" alt="image" src="https://github.com/user-attachments/assets/72e0f3f2-2ed3-49d3-b5dc-120d3995badb" /><img width="605" height="368" alt="image" src="https://github.com/user-attachments/assets/335739b0-d44c-43fc-bf77-bef51b562ff1" />Muhammad Fahriel <br/>
+Muhammad Fahriel <br/>
 2509116050
 
 <pre> 
@@ -22,16 +22,17 @@ Dengan fitur **CRUD** (Create, Read, Update, Delete)
                         
 ## 2.Menu Tambah Projek 
 >Menu ini berfungsi untuk menambahkan projek baru dengan detail:
->- **Judul**
->- **Jenis Konten** (Vlog, Short Movie, Dokumenter, Youtube, Reels, dll.)
->- **Durasi** (detik)
->- **Deadline** (DD-MM-YYYY)
->- **Status** (Selesai/Belum)
+- **Judul**
+- **Jenis Konten** (Vlog, Short Movie, Dokumenter, Youtube, Reels, dll.)
+- **Durasi** (detik)
+- **Deadline** (DD-MM-YYYY)
+- **Status** (Selesai/Belum)
 <img width="977" height="581" alt="image" src="https://github.com/user-attachments/assets/572e130d-a326-4eb1-9b2e-220465e96455" />
 
 ## 3.Menu Hapus Projek
 >Menu ini berfungsi untuk menghapus projek dengan memasukan Nomor projek
-Alur:
+
+<br/>Alur:
 1. Masukkan **nomor** projek yang ingin hapus.  
 2. Jika ditemukan, maka projek dengan nomor tersebut akan di hapus  
 3. Menampilkan pesan berhasil
@@ -59,11 +60,13 @@ Alur:
 
 
 # Kondisi lainnya
-> Jika user menginput menu yg tidak terdapat dalam daftar
-<img width="537" height="327" alt="image" src="https://github.com/user-attachments/assets/c45ba668-3eaf-4171-b325-d8124f19bb03" />
-> Jika user menginput nomor projek yang tidak valid di menu hapus 
-<img width="605" height="368" alt="image" src="https://github.com/user-attachments/assets/0da8231f-f12c-44d6-be9e-1139b1e744e7" />
->Jika user menginpu tnomor projek yang tidak valid di menu update
+> Jika user menginput menu yg tidak terdapat dalam daftar  <br/>
+<img width="537" height="327" alt="image" src="https://github.com/user-attachments/assets/c45ba668-3eaf-4171-b325-d8124f19bb03" /> <br/>
+
+> Jika user menginput nomor projek yang tidak valid di menu hapus  <br/>
+<img width="605" height="368" alt="image" src="https://github.com/user-attachments/assets/0da8231f-f12c-44d6-be9e-1139b1e744e7" /> <br/>
+
+>Jika user menginput nomor projek yang tidak valid di menu update  <br/>
 <img width="650" height="375" alt="image" src="https://github.com/user-attachments/assets/68622e79-8a34-4890-ae2c-05200d2f1a8c" />
 
 
