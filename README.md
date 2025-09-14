@@ -206,7 +206,7 @@ Jika user memasukkan pilihan menu yang tidak valid, program memberikan pesan kes
 
 # Flowchart
 
-flowchart 
-![Flowchart Github (2)](https://github.com/user-attachments/assets/a6f593bf-0493-4eab-822c-4103d2dcabf7)
+>flowchart image
+![Flowchart Github (4)](https://github.com/user-attachments/assets/87cc331a-21b8-4172-bee6-1a51a87b1c73)
 
 
