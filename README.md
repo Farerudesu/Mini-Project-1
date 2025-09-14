@@ -1,4 +1,4 @@
-Muhammad Fahriel <br/>
+<img width="1143" height="568" alt="image" src="https://github.com/user-attachments/assets/72e0f3f2-2ed3-49d3-b5dc-120d3995badb" /><img width="605" height="368" alt="image" src="https://github.com/user-attachments/assets/335739b0-d44c-43fc-bf77-bef51b562ff1" />Muhammad Fahriel <br/>
 2509116050
 
 <pre> 
@@ -31,6 +31,10 @@ Dengan fitur **CRUD** (Create, Read, Update, Delete)
 
 ## 3.Menu Hapus Projek
 >Menu ini berfungsi untuk menghapus projek dengan memasukan Nomor projek
+Alur:
+1. Masukkan **nomor** projek yang ingin hapus.  
+2. Jika ditemukan, maka projek dengan nomor tersebut akan di hapus  
+3. Menampilkan pesan berhasil
 <img width="860" height="331" alt="image" src="https://github.com/user-attachments/assets/ef52fe83-cb7d-45f7-8370-117a5881bf2c" />
 
 ## 4.Menu Perbarui Projek  
@@ -51,6 +55,16 @@ Alur:
 ## 6.Menu Keluar 
  >Menu ini berfungsi untuk keluar dari program 
 <img width="584" height="315" alt="image" src="https://github.com/user-attachments/assets/d92b7db0-f8ef-46f1-9411-fa61e1c1b0f5" />
+
+
+
+# Kondisi lainnya
+> Jika user menginput menu yg tidak terdapat dalam daftar
+<img width="537" height="327" alt="image" src="https://github.com/user-attachments/assets/c45ba668-3eaf-4171-b325-d8124f19bb03" />
+> Jika user menginput nomor projek yang tidak valid di menu hapus 
+<img width="605" height="368" alt="image" src="https://github.com/user-attachments/assets/0da8231f-f12c-44d6-be9e-1139b1e744e7" />
+>Jika user menginpu tnomor projek yang tidak valid di menu update
+<img width="650" height="375" alt="image" src="https://github.com/user-attachments/assets/68622e79-8a34-4890-ae2c-05200d2f1a8c" />
 
 
 # Penjelasan Kode <br/>
