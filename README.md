@@ -155,15 +155,17 @@ jika tidak di temukan nomor proyek maka akan menampilkan pesan invalid
 
 >Menu List Projek (Read)
 ```
-elif userchoice =="4" or userchoice=="List":
-    print("-" * 100)
-    print(f"{'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
-    print("-" * 100)
-    for i in projek:
-        print(f"{i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
-    print ("-" * 100)
+    elif userchoice =="4" or userchoice=="List":
+        print("-" * 100)
+        print(f" {"No" :<2} | {'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
+        print("-" * 100)
+        number = 0
+        for i in projek:
+            number +=1
+            print(f"{number:<3} | {i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
+        print ("-" * 100)
 ```
-Program menampilkan seluruh data projek dalam bentuk tabel dengan kolom: Judul, Jenis, Durasi, Deadline, dan Status.
+Program menampilkan seluruh data projek dalam bentuk tabel dengan kolom: Nomor, Judul, Jenis, Durasi, Deadline, dan Status.
 Format string dengan spesifikasi :<width digunakan agar setiap kolom rata kiri dan sejajar.
 
 >Menu Exit Program
