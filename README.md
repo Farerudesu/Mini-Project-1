@@ -207,6 +207,6 @@ Jika user memasukkan pilihan menu yang tidak valid, program memberikan pesan kes
 # Flowchart
 
 >flowchart image
-![Flowchart Github (4)](https://github.com/user-attachments/assets/87cc331a-21b8-4172-bee6-1a51a87b1c73)
+<img width="2343" height="1439" alt="Flowchart Github drawio" src="https://github.com/user-attachments/assets/a434cf16-bd7b-4f74-96b3-f76535ef4c82" />
 
 
