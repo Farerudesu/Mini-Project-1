@@ -190,7 +190,6 @@ Jika user memasukkan pilihan menu yang tidak valid, program memberikan pesan kes
 # Flowchart
 
 flowchart 
-
-![Flowchart Github (1)](https://github.com/user-attachments/assets/977df08d-3985-42c7-bbc8-16f510956b88)
+![Flowchart Github (2)](https://github.com/user-attachments/assets/a6f593bf-0493-4eab-822c-4103d2dcabf7)
 
 
