@@ -45,7 +45,7 @@ Alur:
 
 ## 5.Menu List Projek 
 >Menu ini berfungsi untuk menampilkan seluruh projek yang tersimpan dalam bentuk tabel.  
-<img width="1292" height="592" alt="image" src="https://github.com/user-attachments/assets/c478a1c4-773c-4249-802b-3c64e7e26d6a" />
+<img width="1225" height="578" alt="image" src="https://github.com/user-attachments/assets/f3245ca2-6107-47e7-bfcf-8f51e96dec8e" />
 
 
 ## 6.Menu Keluar 
