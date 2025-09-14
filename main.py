@@ -1,4 +1,3 @@
-
 #json akan di pakai read file sbagai isi list (next update)
 projek = [("Teaser PKKMB", "Vlog", "120", "20-09-2025", "Belum"),
         ("Short Film Desa", "Short Movie", "600", "30-09-2025", "Selesai"),
@@ -21,9 +20,8 @@ while True:
     print("-" * 38)
     print(f"|Program manajemen projek multimedia |\n| {"1.Tambah projek":<34} |\n| {"2. Hapus projek":<34} |\n| {"3.Update Projek":<34} |\n| {"4.List Projek":<34} |\n| {"5.Keluar" :<34} |")
     print("-" * 38)
-
-    userchoice = input("Pilih 1-5 atau Ketik opsi\n>>>") 
     
+    userchoice = input("Pilih 1-5 atau Ketik opsi\n>>>") 
     if userchoice == "1" or userchoice == "Tambah":
         namaprojek = input("Masukan nama projek:\n>>>")
         jeniskonten = input("Masukan jenis konten: \n Vlog, Short Movie, Dokumenter, Youtube, Reels, lainnya \n>>>")
@@ -32,7 +30,6 @@ while True:
         status = input("Masukan status:\n>>>")
         projek.append((namaprojek, jeniskonten, durasi, deadline, status))
         print(f"Berhasil menambahkan: {namaprojek}")
-        
     elif userchoice =="2" or userchoice== "Hapus":
         cari = int(input("Masukkan Nomor projek yang mau dihapus: "))
         cari -=1
@@ -42,9 +39,7 @@ while True:
         else:
             terhapus = projek.pop(cari)
             print(f"Projek '{terhapus[0]}' berhasil dihapus.")
-
     elif userchoice == "3" or userchoice=="Update":
-        
         update= int(input("Masukan nomor projek yang ingin di perbarui\n>>"))
         update -= 1
         if update < 0 or update >= len(projek):
@@ -61,15 +56,14 @@ while True:
             inputstatus
             )
         print(f"projek '{projek[update][0]}' berhasil di perbarui ")
-    
     elif userchoice =="4" or userchoice=="List":
         print("-" * 100)
-        print(f" {"No" :<2} | {'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
+        print(f" {"No" :<1} | {'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
         print("-" * 100)
         number = 0
         for i in projek:
             number +=1
-            print(f"{number:<3} | {i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
+            print(f" {number:<1}  | {i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
         print ("-" * 100)
 
         
