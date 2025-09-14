@@ -1,15 +1,21 @@
-import time
-import json
-#json read file sbagai isi list 
-with open('data.json', 'r') as f:
-    projek = json.load(f)   
 
+#json akan di pakai read file sbagai isi list (next update)
+projek = [("Teaser PKKMB", "Vlog", "120", "20-09-2025", "Belum"),
+        ("Short Film Desa", "Short Movie", "600", "30-09-2025", "Selesai"),
+        ("Cinematic Motor", "Reels", "180", "25-09-2025", "-"),
+        ("Dokumentasi Kampus", "Dokumenter", "900", "15-10-2025", "Belum"),
+        ("Konten Tutorial Editing", "Youtube", "420", "05-10-2025", "-"),
+        ("Tutorial Masak Royco", "Vlog", "90", "20-08-2020", "Selesai"),
+        ("Podcast with Windah Batubara", "Youtube", "390", "20-08-2022", "Selesai"),
+        ("Makan bang ft Young lex", "Vlog", "1390", "03-02-2020", "Belum"),
+]
 print ("""                                                                                 
 ,--.   ,--.,--. ,--.,--.,--------.,--.,--.   ,--.,------.,------.  ,--.  ,---.   
 |   `.'   ||  | |  ||  |'--.  .--'|  ||   `.'   ||  .---'|  .-.  \ |  | /  O  \  
 |  |'.'|  ||  | |  ||  |   |  |   |  ||  |'.'|  ||  `--, |  |  \  :|  ||  .-.  | 
 |  |   |  |'  '-'  '|  '--.|  |   |  ||  |   |  ||  `---.|  '--'  /|  ||  | |  | 
 `--'   `--' `-----' `-----'`--'   `--'`--'   `--'`------'`-------' `--'`--' `--'  """)
+#perulangan agar program tetap berjalan sampai user menginput keluar
 while True:
     print("")
     print("-" * 38)
@@ -25,50 +31,51 @@ while True:
         deadline= input("Masukan deadline projek (DD-MM-YYYY):\n>>>")
         status = input("Masukan status:\n>>>")
         projek.append((namaprojek, jeniskonten, durasi, deadline, status))
-        print(f"Berhasil ditambahkan: {namaprojek} | {jeniskonten} | {durasi} detik | {deadline} | {status}")
+        print(f"Berhasil menambahkan: {namaprojek}")
         
     elif userchoice =="2" or userchoice== "Hapus":
-        cari = input("Masukkan judul projek yang mau dihapus: ").strip()
-        pencarian =next((i for i, t in enumerate(projek) if t[0] == cari), None)
-        if pencarian is None:
-            print("Judul tidak ditemukan.")
+        cari = int(input("Masukkan Nomor projek yang mau dihapus: "))
+        cari -=1
+        if cari  < 0 or cari >= len(projek):
+            print("Nomor projek tidak valid!")
+            continue
         else:
-            terhapus = projek.pop(pencarian)
+            terhapus = projek.pop(cari)
             print(f"Projek '{terhapus[0]}' berhasil dihapus.")
 
     elif userchoice == "3" or userchoice=="Update":
-        update= input("Masukan judul projek yang ingin di perbarui\n>>").strip()
-        pencarian =next((i for i, t in enumerate(projek) if t[0] == update), None)
-        if pencarian is None: 
-            print("Judul tidak ada dalam database!!!")
-        else: 
-            print("Menyimpan...")
+        
+        update= int(input("Masukan nomor projek yang ingin di perbarui\n>>"))
+        update -= 1
+        if update < 0 or update >= len(projek):
+            print("Nomor projek tidak valid!")
+            continue  
+        else:
             inputstatus = input("Update Status (Selesai/Belum) \n>>") 
-            projek [pencarian] = (    
-                projek[pencarian][0],
-                projek[pencarian][1],
-                projek[pencarian][2],
-                projek[pencarian][3],   
-                inputstatus
+            print("Menyimpan...")
+            projek [update] = (    
+            projek[update][0],
+            projek[update][1],
+            projek[update][2],
+            projek[update][3],   
+            inputstatus
             )
-            time.sleep(1)
-            print(f"projek '{update}' berhasil di perbarui ")
+        print(f"projek '{projek[update][0]}' berhasil di perbarui ")
     
     elif userchoice =="4" or userchoice=="List":
         print("-" * 100)
-        print(f"{'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
+        print(f" {"No" :<2} | {'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
         print("-" * 100)
+        number = 0
         for i in projek:
-            print(f"{i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
+            number +=1
+            print(f"{number:<3} | {i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
         print ("-" * 100)
 
         
     elif userchoice == "5" or userchoice=="Keluar":
         print("Menyimpan data....")
-        time.sleep(2)
-        #simpan data pakai json
-        with open('data.json', 'w') as f:
-            json.dump(projek, f)
+        #simpan data pakai json (next update)
         print("Data Tersimpan..") 
         break    
     else:
